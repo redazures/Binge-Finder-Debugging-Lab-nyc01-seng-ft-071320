@@ -4,7 +4,6 @@ import Filter from './Filter';
 import { Menu } from 'semantic-ui-react';
 
 const Nav = (props) => {
-  console.log("what is props at Nav", props)
   return (
     <div>
       <Menu attached='top' inverted>
@@ -18,7 +17,7 @@ const Nav = (props) => {
           <Filter handleFilter={props.handleFilter}/>
         </Menu.Item>
         <Menu.Item position="right">
-          <Search handleSearch={props.handleSearch} search={props.search}/>
+          <Search handleSearch={props.handleSearch} searchTerm={props.searchTerm}/>
         </Menu.Item>
       </Menu>
     </div>
