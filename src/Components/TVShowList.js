@@ -5,6 +5,7 @@ import TVShow from './TVShow'
 class TVShowList extends Component {
 
   mapAllShows = () => {
+    console.log("this is my search term in Tv Show", this.props.searchTerm)
     if (!!this.props.searchTerm){
       this.props.shows.map((s) => {
         if (s.name.toLowerCase().includes(this.props.searchTerm)){
